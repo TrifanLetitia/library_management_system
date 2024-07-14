@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>&#128218; Bookie</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9db0d054af.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gwendolyn:wght@400;700&family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=WindSong:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Gwendolyn:wght@400;700&family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=WindSong:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <div class="container">
+            <div class="row">
+                <h1 class="logo">BOOKIE</h1>
+            </div>
+        </div>
+
+        <!-- meniu -->
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-bars"
+                    style="font-size: 2.3em; color: #283E50;"></i></button>
+            <div class="dropdown-content">
+                <a href="index.html" class="active">Acasă</a>
+                <a href="cărți.html">Cărți</a>
+                <a href="despre_autor.html">Despre Autor</a>
+                <div id="recenzie">
+                    <a href="#">Recenzii</a>
+                    <div class="submenu">
+                        <a href="recenzii.html">Toate Recenziile</a>
+                        <a href="adauga_recenzie.html">Recenzia Ta</a>
+                    </div>
+                    <a href="login.html">LOGIN</a>
+                    <a href="sign_up.html">SIGN UP</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="home_background">
+            <article class="home_quote">
+                <p>Descoperă</p>
+                <p>următoarea</p>
+                <p>carte preferată!</p>
+            </article>
+
+        </section>
+        
+        <div class="center">
+            <div class="reopen_btn">
+                <img src="../Assets/icons8-double-left-64.png"></div>
+            <div class="pop_up">
+                <div class="close_btn">&#10005;</div>
+                <div class="pop_up_1">
+                    <p class="p1">RECOMANDĂRILE ZILEI</p>
+                    <p class="p2">Dacă cauți inspirație pentru cărți interesante, avem câteva sugestii pentru tine.</p>
+                </div>
+                <div class="see_more">
+                    <p>VEZI AICI</p>
+                    <a class="arrow" href="#"><img src="../Assets/icons8-arrow-64.png"></a>
+                </div>
+            </div>
+            <section class="selector_title">
+
+                <article>
+                    <img src="../Assets/BOOKIE (4) (1).png">
+                </article>
+            </section>
+
+            <selection class="wrap">
+                <!-- Drop-down list -->
+                <!--Choose Category-->
+                <select name="Categorie" class="category">
+                    <option selected disabled>Categorie</option>
+                    <optgroup label="Beletristică">
+                        <option value="Ficțiune">Ficțiune</option>
+                        <option value="Aventură">Aventură</option>
+                        <option value="Dramă">Dramă</option>
+                        <option value="Poezie">Poezie</option>
+                        <option value="Istorie">Istorie</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Cărți de dragoste">Cărți de dragoste</option>
+                    </optgroup>
+                    <optgroup label="Dezvoltare personală">
+                        <option value="Psihologie și consiliere">Psihologie și consiliere</option>
+                        <option value="Spiritualitate">Spiritualitate</option>
+                        <option value="Științe">Științe</option>
+                    </optgroup>
+                    <optgroup label="Psihologie">
+                        <option value="Personalitate">Personalitate</option>
+                        <option value="Psihologia copilului">Psihologia copilului</option>
+                        <option value="Psihologia femeii">Psihologia femeii</option>
+                    </optgroup>
+                    <option value="Cărți de bucate">Cărți de bucate</option>
+                    <option value="Călătorii,ghiduri,hărți">Călătorii,ghiduri,hărți</option>
+
+                </select>
+
+
+                <form class="search">
+                    <input type="text" class="searchTerm" placeholder="Caută...">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </selection>
+        </div>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_content">
+            <p>Copyright 2024. All rights reserved | This website is made with <b>❤</b> for book readers!</p>
+            <p>Letiția Trifan</p>
+        </div>
+    </footer>
+</body>
+<script src="scripts.js"></script>
+
+</html>

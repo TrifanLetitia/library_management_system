@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="sie-edge" />
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="carti.css">
+    <title>Cărți disponibile</title>
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <div class="container">
+            <div class="row">
+                <h1 class="logo">BOOKIE</h1>
+            </div>
+        </div>
+
+        <!-- meniu -->
+        <div class="dropdown">
+            <a href="carti_imprumutate.html">Cărțile tale împrumutate</a>
+            <a href="home.html" style="margin: 10px" onclick="resetDetails()">Log Out</a>
+            <!----
+            <button class="dropbtn"><i class="fa fa-bars" style="font-size: 2.3em; color: #283E50;"></i></button>
+            <div class="dropdown-content">
+                <a href="index.html" class="active">Acasă</a>
+                <a href="cărți.html">Cărți</a>
+                <a href="despre_autor.html">Despre Autor</a>
+                <div id="recenzie">
+                    <a href="#">Recenzii</a>
+                    <div class="submenu">
+                        <a href="recenzii.html">Toate Recenziile</a>
+                        <a href="adauga_recenzie.html">Recenzia Ta</a>
+                    </div>
+                    <a href="login.html">LOGIN</a>
+                    <a href="sign_up.html">SIGN UP</a>
+                </div>
+            </div>-->
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main-container-categ">
+            <div class="hiden d-none d-md-block filters">
+                <section class="filter-categ">
+                    <div class="categ-filter-desk">
+                        <div class="d-md-none d-lg-none d-xl-none close-categ-filter-desk">
+                            <p>Filtre</p>
+                            <div class="close-btn-categ-filter">
+                                <p>x</p>
+                            </div>
+                        </div>
+                        <h3 class="filter-titles filter-categ-title">Carti</h3>
+                        <ul class="overflow-class-y overflow-class-special">
+                            <li>
+                                <a href="/carti/afaceri-economie?ft">
+                                    Ficțiune<span id="fictiune">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/arta-arhitectura-design?ft">
+                                    Aventură<span id="aventura">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/audiobook?ft">
+                                    Dramă<span id="drama">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/beletristica?ft">
+                                    Poezie<span id="poezie">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/lichidari-de-stoc?ft">
+                                    Istorie<span id="istorie">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/biografii-memorii-jurnale?ft">
+                                    Thriller<span id="thriller">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/calatorii-ghiduri-harti?ft">
+                                    Cărți de dragoste<span id="dragoste">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/carti-in-maghiara?ft">
+                                    Psihologie și consiliere<span id="psihologie">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/carti-pentru-copii?ft">
+                                    Spiritualitate<span id="spiritualitate">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/cresterea-copilului?ft">
+                                    Științe<span id="stiinte">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/cultura-generala?ft">
+                                    Politiste<span id="politiste">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/dezvoltare-personala?ft">
+                                    Psihologia copilului<span id="psih_copilului">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/drept?ft">
+                                    Psihologia femeii<span id="psih_femeii">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/gastronomie?ft">
+                                    Cărți de bucate<span id="bucate">(0)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/carti/hobby-practic?ft">
+                                    Călătorii,ghiduri,hărți<span id="calatorii">(0)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+
+            </div>
+            <div class="products-list">
+                <section class="cc-pg-categ-products">
+                    <div class="cc-pg-categ-products-ct">
+                        <ul class="categ-prod-list" id="categ-prod-list">
+
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+            <aside class="sidebar">
+                <div class="component">
+                    <div class="header">Cărți selectate</div>
+                    <div class="content">
+                        <div class="empty-text">Coșul tău este gol.</div>
+                        <ul class="items list" id="cos"></ul>
+                    </div>
+                    <div class="footer">
+                        <button class="button" onclick="imprumutaCarti()">Împrumută</button>
+                        <button class="button empty-cart">Golește coșul</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <div id="cart-popup" style="display:none;">
+        Puteți împrumuta maxim 5 cărți!
+    </div>
+
+    <footer class="footer">
+        <div class="footer_content">
+            <p>Copyright 2024. All rights reserved | This website is made with <b>❤</b> for book readers!</p>
+        </div>
+    </footer>
+</body>
+
+<script src="carti.js"></script>
+</body>
+
+</html>

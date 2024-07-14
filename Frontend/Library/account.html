@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="sie-edge" />
+    <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="account.css">
+    <title>Slider Form</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#" id="signUpForm">
+                <h1>Sign up</h1>
+                <div class="social-container">
+                    
+                </div>
+                <input type="text" placeholder="Nume" id="name">
+                <input type="text" placeholder="CNP" id="cnp">
+                <input type="password" placeholder="Parolă" id="password">
+                <input type="text" placeholder="Adresă" id="adress">
+                <input  type="text" placeholder="Telefon" id="phone">
+                <button onclick="signUp()">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#" id="signInForm">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                   
+                </div>
+                <input type="text" placeholder="CNP" id="signin_cnp">
+                <input type="password" placeholder="Parolă" id="signin_password">
+                <button onclick="signIn()">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bine ai revenit!</h1>
+                    <p></p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Salut!</h1>
+                    <p></p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="account.js"></script>
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+</body>
+
+</html>

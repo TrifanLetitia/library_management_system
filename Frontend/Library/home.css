@@ -1,0 +1,460 @@
+header {
+    background: linear-gradient(to right, #FEEAD4, #ffffff);
+    padding: 0 48px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    align-items: center;
+    justify-content: space-between;
+    -webkit-box-shadow: 1px 1px 8px 1px #25e4e436;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    height: 72px;
+  }
+  
+  html * {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  .logo {
+    color: #283E50;
+    letter-spacing: 8px;
+    font-family: "Playfair Display", serif;
+    text-align: right;
+  }
+  
+  .logo:hover {
+    color: #283E50;
+    letter-spacing: 8px;
+    animation: text 3s 1;
+  }
+  
+  @keyframes text {
+    0% {
+      color: #80402c;
+  
+    }
+  
+    30% {
+      letter-spacing: 25px;
+  
+    }
+  
+    85% {
+      letter-spacing: 8px;
+  
+    }
+  }
+  
+  
+  .dropbtn {
+    background: none;
+    padding: 10px;
+    border: none;
+    color: #283E50;
+  }
+  
+  .dropbtn img {
+    width: 30px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: right;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+  }
+  
+  .dropdown-content a {
+    color: #283E50;
+    padding: 20px 0px 0px 0px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1em;
+    border-bottom: 1px solid rgb(207, 204, 204);
+    font-family: "Montserrat", serif;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #dccfc6;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #dccfc6;
+  }
+  
+  .submenu {
+    display: none;
+    background-color: #e0cfc2;
+  
+  }
+  
+  #recenzie:hover>.submenu {
+    display: block;
+  }
+  
+  
+  
+  .dropdown_content a.active {
+    background-color: #FFB800;
+    color: white;
+  }
+  
+  main {
+    padding: 20px 20px 80px 20px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: black;
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .text p:nth-child(2){
+    color: rgb(100, 51, 19);
+  }
+
+  .text_p1 {
+    color: #283E50;
+    font-size: 50px;
+  }
+
+  .text_p2 {
+    font-size: 30px;
+    font-family: "WindSong", cursive;
+    padding: 50px;
+    letter-spacing: 8px;
+    color: #80402c;
+  }
+
+  .login_btn {
+    font-size: 0.7em;
+    padding: 10px 40px;
+    border-radius: 40px;
+    border: 1px solid #80402c;
+    background-color: #80402c;
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .image {
+    width: 50%;
+    text-align: center;
+  }
+
+  .image img {
+    max-width: 90%;
+    box-shadow: 1px 1px 8px 1px #00000036;
+    height: 100%;
+  }
+  
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .home_quote {
+    font-family: "WindSong", cursive;
+    font-weight: 200;
+    font-style: normal;
+    letter-spacing: 8px;
+    color: white;
+    padding: 60px;
+    font-size: 2em;
+  }
+  
+  .home_background {
+    position: absolute;
+    top: 25%;
+  }
+  
+  .home_quote p {
+    margin-bottom: 20px;
+  }
+  
+  .selector_title img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+  
+  .selector_title {
+    height: 100%;
+    max-width: 100%;
+  }
+  
+  .pop_up {
+    height: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0.7;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .pop_up_1 {
+    padding: 20px 20px 40px 20px;
+  }
+  
+  .pop_up .p1 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .close_btn {
+    position: absolute;
+    top: -10px; 
+    right: -10px;
+    cursor: pointer;
+    font-size: 24px;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    color: white;
+    padding: 15px 15px 15px 15px;
+  }
+  
+  .pop_up {
+    transition: transform 0.5s, opacity 0.5s;
+    position: fixed;
+    right: 0px;
+    top: 40%;
+    transform: translateX(100%);
+    opacity: 0.8; 
+    width: 300px; 
+  }
+  
+  .pop_up--visible {
+    transform: translateX(-10%); 
+    display: block;
+  }
+  
+  .reopen_btn {
+    position: absolute;
+    right: 0px; 
+    top: 50%; 
+    text-align: center;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .reopen_btn img{
+    width: 50px;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  
+  @keyframes neon1 {
+    from {
+      filter: drop-shadow(0 0 1px #9AD0C3) drop-shadow(0 0 20px #9AD0C3) drop-shadow(0 0 30px #9AD0C3) drop-shadow(0 0 40px #9AD0C3) drop-shadow(0 0 70px #9AD0C3) drop-shadow(0 0 80px #9AD0C3) drop-shadow(0 0 100px #9AD0C3) drop-shadow(0 0 150px #9AD0C3);
+    }
+    to {
+      filter: drop-shadow(0 0 5px #9AD0C3) drop-shadow(0 0 10px #9AD0C3) drop-shadow(0 0 15px #9AD0C3) drop-shadow(0 0 20px #9AD0C3) drop-shadow(0 0 35px #9AD0C3) drop-shadow(0 0 40px #9AD0C3) drop-shadow(0 0 50px #9AD0C3) drop-shadow(0 0 75px #9AD0C3);
+    }
+  }
+  
+  @keyframes blurEffect {
+    0% {
+      filter: blur(0px);
+    }
+    50% {
+      filter: blur(2px);
+    }
+    100% {
+      filter: blur(0px);
+    }
+  }
+  
+  .see_more {
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .see_more p{
+    font-weight: 500;
+    font-style: oblique;
+  }
+  
+  .arrow {
+    border-image: 1px solid black;
+    color: white;
+    background-color: black;
+    padding: 1px 10px 1px 10px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .arrow img {
+    width: 65px;
+    height: 20px;
+  }
+  
+  .wrap {
+    display: flex;
+  }
+  
+  .search_option {
+    display: block;
+  }
+  
+  .search {
+    width: 30%;
+    position: relative;
+    display: flex;
+  }
+  
+  .category {
+    border: 3px solid #9AD0C3;
+    padding: 5px;
+    height: 40px;
+    width: 30%;
+    border-radius: 5px 5px 5px 5px;
+    outline: none;
+    color: #131414;
+    background-color: #f3d7c2;
+  
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #9AD0C3;
+    border-right: none;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+    margin-left: 2px;
+  }
+  
+  .searchTerm:focus {
+    color: #080808;
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #9AD0C3;
+    background: #9AD0C3;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .searchButton img {
+    width: 32px;
+  }
+  
+  .wrap {
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .footer {
+    background-color: #e0cfc2;
+    width: 100%;
+    height: 70px;
+  }
+  
+  .footer_content {
+    height: 32px;
+    padding: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    color: #80402c;
+  }
+  
+  .footer_content b{
+    color: #f77e59;
+  }
+  
+  @media only screen and (max-width: 768px) {
+  
+  
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .home_background {
+      display: none;
+    }
+  }
+  
+  #home {
+    width: 20px;
+    height: 20px;
+    background: url(img_navsprites.gif) 0 0;
+  }
+  
+  #next {
+    width: 20px;
+    height: 20px;
+    background: url(img_navsprites.gif) -91px 0;
+  }
